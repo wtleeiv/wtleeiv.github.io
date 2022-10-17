@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,25 @@
     <script src="script.js"></script>
     <title>Knittes &lt;3</title>
 </head>
+
 <body>
-    <h1>Knittes! &lt;3</h1>
+    <h1>I love my bunno! &lt;3</h1>
     <table>
         <tr>
-            <td><p>Rows:</p></td>
-            <td><input id="n_rows" type="text" value="10" onchange="n_rows_update()"/></td>
+            <td><label for="n_rows">Rows:</label></td>
+            <td><input id="n_rows" type="text" value="10" onchange="n_rows_update()" /></td>
         </tr>
         <tr>
-            <td><p>Columns:</p></td>
-            <td><input id="n_cols" type="text" value="10" onchange="n_cols_update()"/></td>
+            <td><label for="n_cols">Columns:</label></td>
+            <td><input id="n_cols" type="text" value="10" onchange="n_cols_update()" /></td>
+        </tr>
+        <tr>
+            <td><label for="width">Width:</label></td>
+            <td><input id="width" type="text" value="10" onchange="width_update()" /></td>
+        </tr>
+        <tr>
+            <td><label for="height_ratio">Height ratio:</label></td>
+            <td><input id="height_ratio" type="text" value="0.8" onchange="height_ratio_update()" /></td>
         </tr>
     </table>
     <svg version="1.1" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
@@ -31,4 +41,5 @@
         <line x1="50" y1="0" x2="50" y2="400" stroke="orange" stroke-width="10" />
     </svg>
 </body>
+
 </html>
